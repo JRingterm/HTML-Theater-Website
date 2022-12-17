@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인</title>
+    <style>
+       #center{
+           width:600px;
+           margin:0 auto;
+       }
+       body {background: seashell;}
+       h1 {text-align: center; color:firebrick;}
+
+       ul{list-style:none; text-align:center; border-top:2px solid red;
+       border-bottom:2px solid red; padding:10px 0;
+       }
+       ul li{display:inline; padding:0 10px; letter-spacing:10px;
+       }
+       ul li a{text-decoration:none; color:black;}
+       ul li a:hover{ text-decoration:underline;}
+       main{width: 570px; height: 400px; float:left; margin:3px; border:5px solid black;}
+       
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="mainmenu.html">HOJUN CINEMA</a>
+    </h1>
+    <ul>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="booking.html">예매</a></li>
+        <li><a href="Event.html">이벤트</a></li>
+        <li><a href="login.html">로그인/회원가입</a></li>
+        <li><a href="theater.html">회사 소개</a></li>
+    </ul>
+    <div id="center">
+        <main>
+            <p style="font-size:50px; font-family:'Arial black';
+             color:orange">Login</p>
+             <form action="input.jsp" method="post">
+                 <p style="font-family:'Arial Black'">아이디:<input type="text" name="id"/><br></p>
+                 <p style="font-family:'Arial Black'">비밀번호:<input type="password" name="password"></p>
+                 <input type="submit" value="로그인">
+                 <input type="submit" value="회원가입">
+                 
+             </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>고품격 영화관 호준시네마</title>
+    <style>
+       body {background: seashell;}
+       h1 {text-align: center; color:firebrick;}
+       /*메뉴바를 만들기 위한 ul 설정*/
+       ul{list-style:none; text-align:center; border-top:2px solid red;
+       border-bottom:2px solid red; padding:10px 0;
+       }/*리스트 안 텍스트가 가운데 정렬로, 리스트의 위 아래에 빨간색 경계선을 그림*/
+       ul li{display:inline; padding:0 10px; letter-spacing:10px;
+       }/*리스트 항목이 한 줄에 차례로 배치되게 한다. 항목 간의 간격과 글자 간격을 설정한다.*/
+       ul li a{text-decoration:none; color:black;}
+       ul li a:hover{ text-decoration:underline;}/*마우스를 올려놓으면 밑줄이 생기게*/
+       /*구역을 나누기 위한 요소들*/
+       aside{width: 300px; height: 400px; float:left; margin:2px; padding:2px; 
+       border: 2px solid black;}
+       main{width: 570px; height: 400px; float:left; margin:3px; border:5px solid black;}
+       section{width:400px; height:200px; float:left; margin:2px; border: 2px solid black;}
+       footer{width:1480px; height:60px; float:left; margin:10px;}
+        
+       
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="mainmenu.html">HOJUN CINEMA</a>
+    </h1>
+    <ul>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="booking.html">예매</a></li>
+        <li><a href="Event.html">이벤트</a></li>
+        <li><a href="login.html">로그인/회원가입</a></li>
+        <li><a href="theater.html">회사 소개</a></li>
+    </ul>
+    <!--aside 태그로 Box office 영역을 만듦-->
+    <aside style="margin-left:10px;">
+        <ol>
+            <p style = "font-size:30px; color:firebrick; font-family:'Arial Black'";>BOX OFFICE</p>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201910/14879_301_1.mp4">조커</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201910/14805_301_1.mp4">가장 보통의 연애</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201910/14831_301_1.mp4">퍼펙트맨</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201909/14789_301_1.mp4">장사리: 잊혀진 영웅들</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201909/14718_301_1.mp4">양자물리학</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201910/14832_301_1.mp4">소피와 드래곤: 마법책의 비밀</a></li>
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201810/13288_301_1.mp4">암수살인</a></li>    
+            <li><a href="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201909/14705_301_1.mp4">나쁜 녀석들:더 무비</a></li>
+        </ol><!--리스트로 나열하고, 영화 제목을 누르면 해당 예고편 영상을 실행-->
+    </aside>
+    <!--main 태그로 영화 예고편 영역과 광고 영역 만듦-->
+    <main style="background: black";>
+        <video src="http://caching.lottecinema.co.kr//Media/MovieFile/MovieMedia/201910/14879_301_1.mp4" 
+        autoplay controls padding-bottom=200px width=570 height=400 float=left margin=3px;>
+        </video><!--비디오 태그를 이용해서 사이트에 접속시 예고편 실행-->
+    </main>
+    <main>
+        <a href = "http://www.baemin.com/" alt="baemin">
+            <img src = "image/bedal.PNG" alt="AD" width=570 height=400 margin=2px>
+        </a><!--사이트에서 흔히 볼 수있는 광고배너. 클릭시 배달의 민족 사이트로 접속-->
+    </main>
+    <!--section 태그로 영역을 나눔.-->
+    <section style="width:1500px; height:60px; margin:2px; border:none";>
+        <p style="font-size:24px; color:firebrick; font-family:'Arial Black'";>
+        =============================================EVENT=============================================</p>
+    </section>
+
+    <center><!--가운데 정렬을 시키기 위한 태그-->
+    <!--secion 태그의 스타일을 새로 지정하며, 이벤트 영역을 만듦-->
+    <section style="width:300px; height:250px; margin:2px; margin-left:30px; background:white; border: 2px solid black;" >
+        <a href="Event.html" alt="popcorn">
+            <img src = "image/popcorn.PNG" alt="popcorn" width=300, height=200; margin=2px;>
+        </a>
+        <p style="font-size:20px; font-family:'Arial black'";>영화보고 팝콘먹자!</p>
+    </section>
+    <section style="width:300px; height:250px; margin:2px; margin-left:30px; background:white; border: 2px solid black";>
+        <a href="Event.html" alt="popcorn">
+            <img src = "image/1+1event.PNG" alt="1+1" width=300, height=200; margin=2px;>
+        </a>
+        <p style="font-size:20px; font-family:'Arial black'";>소피와 함께하는 1+1 이벤트</p>
+    </section>
+    <section style="width:300px; height:250px; margin:2px; margin-left:30px; background:white; border: 2px solid black"; >
+        <a href="Event.html" alt="popcorn">
+            <img src = "image/poster event.PNG" alt="poster" width=300, height=200; margin=2px;>
+        </a>
+        <p style="font-size:20px; font-family:'Arial black'";>조커 포스터 이벤트</p>
+    </section>
+    <section style="width:300px; height:250px; margin:2px; margin-left:30px; background:white; border: 2px solid black";>
+        <a href="Event.html" alt="popcorn">
+            <img src = "image/yogurt event.PNG" alt="yogurt" width=300, height=200; margin=2px;>
+        </a>
+        <p style="font-size:20px; font-family:'Arial black'";>요구르트 콤보 이벤트</p>
+    </section><!--각각의 이벤트들은 클릭시 자동으로 이벤트 설명 주소로 이동.-->
+    </center>
+    <!--다시 section 태그로 제휴/할인 영역을 나눔-->
+    <section style="width:1500px; height:60px; margin:2px; border:none";>
+        <p style="font-size:24px; color:firebrick; font-family:'Arial Black'";>
+        =============================================제휴/할인===========================================</p>
+    </section>
+
+    <center>
+        <section style="margin-left: 140px; border:none";>
+            <a href="shinhancard.html" alt="shinhan" width=400, height=200, margin=2px>
+                <img src="image/shinhan.PNG" alt="">
+            </a>
+        </section>
+        <section style="border:none";>
+            <a href="lottecard.html" alt="lotte" width=400, height=200, margin=2px>
+                <img src="image/lotte.PNG" alt="">
+            </a>
+        </section>
+        <section style="border:none";>
+            <a href="bccard.html" alt="bc" width=400, height=200, margin=2px>
+                <img src="image/bc.png" alt="">
+            </a>
+        </section><!--각각의 카드를 클릭시, 할인 혜택을 받을 수 있는 카드 설명 주소로 이동-->
+    </center>
+    <!--footer 태그로 영화관 담당자의 거주지와 연락처, 저작권 등을 표시.-->
+    <footer>
+        <section style="width:420px; height:60px; float:left; margin:2px; border:none";>
+            <p style= "border-right-width:2px; border-right-color:grey;
+            border-right-style: solid";>충청남도 아산시 신창면 순천향로 22 향설생활관 2관 2층</p>
+        </section>
+        <section style="width:160px; height:60px; float:left; margin:2px; border:none";>
+                <p style= "border-right-width:2px; border-right-color:grey;
+                border-right-style: solid";>고객 센터 1544-1234</p>
+        </section>
+        <section style="width:130px; height:60px; float:left; margin:2px; border:none";>
+                <p style= "border-right-width:2px; border-right-color:grey;
+                border-right-style: solid";>대표이사 이호준</p>
+        </section>
+        <section style="width:400px; height:60px; float:left; margin:2px; border:none";>
+                <p>COPYRIGHT© HOJUN CINEMA ALL RIGHT RESERVED.</p>
+        </section>
+    </footer> 
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>예약</title>
+    <style>
+       body {background: seashell;}
+       h1 {text-align: center; color:firebrick;}
+
+       ul{list-style:none; text-align:center; border-top:2px solid red;
+       border-bottom:2px solid red; padding:10px 0;
+       }
+       ul li{display:inline; padding:0 10px; letter-spacing:10px;
+       }
+       ul li a{text-decoration:none; color:black;}
+       ul li a:hover{ text-decoration:underline;}
+
+       aside{width: 300px; height: 400px; float:left; margin:2px; padding:2px; 
+       border: 2px solid black;}
+       main{width: 530px; height: 170px; float:left; margin:2px; border:3px solid black;}
+       section{width:520px; height:36px; float:left; margin:2px; border:3px solid gray;}
+       footer{width:1480px; height:60px; float:left; margin:10px;}
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="mainmenu.html">HOJUN CINEMA</a>
+    </h1>
+    <ul>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="booking.html">예매</a></li>
+        <li><a href="Event.html">이벤트</a></li>
+        <li><a href="login.html">로그인/회원가입</a></li>
+        <li><a href="theater.html">회사 소개</a></li>
+    </ul>
+    
+    <form action="input.jsp" method="post">
+    영화관:
+    <select name="theater">
+        <option value="seoul">서울</option>
+        <option value="incheon">경기/인천</option>
+        <option value="daejun">충청/대전</option>
+        <option value="gwangju">전라/광주</option>
+        <option value="daegu">경북/대구</option>
+        <option value="busan">경남/부산/울산</option>
+        <option value="gangwon">강원</option>
+        <option value="jeju">제주</option>
+    </select>
+    <br>
+    영화:
+    <select name="movie">
+            <option value="joker">조커</option>
+            <option value="best">가장 보통의 연애</option>
+            <option value="perfectman">퍼펙트 맨</option>
+            <option value="jangsari">장사리:잊혀진 영웅들</option>
+            <option value="physic">양자물리학</option>
+            <option value="sophie">소피와 드래곤:마법책의 비밀</option>
+            <option value="murder">암수살인</option>
+            <option value="bad">나쁜녀석들</option>
+        </select>
+    <br>
+    날짜:<input type="date" name="date"/><br>
+    시간:<input type="time" name="time"/><br>
+    <p style="float:left">좌석:</p>
+    <main>
+        <input type="button" name="E1" value="E1">
+        <input type="button" name="E2" value="E2">
+        <input type="button" name="E3" value="E3">
+        <input type="button" name="E4" value="E4">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="E5" value="E5">
+        <input type="button" name="E6" value="E6">
+        <input type="button" name="E7" value="E7">
+        <input type="button" name="E8" value="E8">
+        <input type="button" name="E9" value="E9">
+        <input type="button" name="E10" value="E10">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="E11" value="E11">
+        <input type="button" name="E12" value="E12">
+        <br>
+        <input type="button" name="D1" value="D1">
+        <input type="button" name="D2" value="D2">
+        <input type="button" name="D3" value="D3">
+        <input type="button" name="D4" value="D4">
+        &nbsp;&nbsp;
+        <input type="button" name="D5" value="D5">
+        <input type="button" name="D6" value="D6">
+        <input type="button" name="D7" value="D7">
+        <input type="button" name="D8" value="D8">
+        <input type="button" name="D9" value="D9">
+        <input type="button" name="D10" value="D10">
+        &nbsp;&nbsp;
+        <input type="button" name="D11" value="D11">
+        <input type="button" name="D12" value="D12">
+        <br>
+        <input type="button" name="C1" value="C1">
+        <input type="button" name="C2" value="C2">
+        <input type="button" name="C3" value="C3">
+        <input type="button" name="C4" value="C4">
+        &nbsp;&nbsp;
+        <input type="button" name="C5" value="C5">
+        <input type="button" name="C6" value="C6">
+        <input type="button" name="C7" value="C7">
+        <input type="button" name="C8" value="C8">
+        <input type="button" name="C9" value="C9">
+        <input type="button" name="C10" value="C10">
+        &nbsp;&nbsp;
+        <input type="button" name="C11" value="C11">
+        <input type="button" name="C12" value="C12">
+        <br>
+        <input type="button" name="B1" value="B1">
+        <input type="button" name="B2" value="B2">
+        <input type="button" name="B3" value="B3">
+        <input type="button" name="B4" value="B4">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="B5" value="B5">
+        <input type="button" name="B6" value="B6">
+        <input type="button" name="B7" value="B7">
+        <input type="button" name="B8" value="B8">
+        <input type="button" name="B9" value="B9">
+        <input type="button" name="B10" value="B10">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="B11" value="B11">
+        <input type="button" name="B12" value="B12">
+        <br>
+        <input type="button" name="A1" value="A1">
+        <input type="button" name="A2" value="A2">
+        <input type="button" name="A3" value="A3">
+        <input type="button" name="A4" value="A4">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="A5" value="A5">
+        <input type="button" name="A6" value="A6">
+        <input type="button" name="A7" value="A7">
+        <input type="button" name="A8" value="A8">
+        <input type="button" name="A9" value="A9">
+        <input type="button" name="A10" value="A10">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" name="A11" value="A11">
+        <input type="button" name="A12" value="A12">
+        
+        <section>
+            <p style="text-align:center; font-family:'Arial black'; color:gray">SCREEN</p>
+        </section>
+    </main>
+    </form>
+</body>
+</html>
